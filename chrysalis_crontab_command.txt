@@ -1,0 +1,1 @@
+0 1 * * * sbatch /lcrc/group/e3sm/soft/omega/cdash/omega_chrysalis_cdash.sh
