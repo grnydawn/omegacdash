@@ -1,0 +1,14 @@
+#SCRON --job-name=OMEGA-SCRON
+#SCRON -q cron
+#SCRON -C cron
+#SCRON -A e3sm
+#SCRON -t 00:10:00
+#SCRON -o /global/cfs/cdirs/e3sm/omega/cdash/logs/OmegaScron_%j.out
+#SCRON -e /global/cfs/cdirs/e3sm/omega/cdash/logs/OmegaScron_%j.err
+#SCRON --open-mode=append
+
+#0 9 * * * sbatch /global/common/software/e3sm/omega/cdash/omega_perlmutter_cdash.sh
+0 9 * * * sbatch /global/common/software/e3sm/omega/cdash/omega_pm-gpu_cdash.sh; sbatch /global/common/software/e3sm/omega/cdash/omega_pm-cpu_cdash.sh
+
+# monitoring scrontab job
+# squeue --me -q cron -O JobID,EligibleTime
