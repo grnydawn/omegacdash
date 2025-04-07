@@ -1,0 +1,1 @@
+0 1 * * * sbatch /autofs/nccs-svm1_proj/cli115/software/omega/cdash/omega_frontier_cdash.sh
