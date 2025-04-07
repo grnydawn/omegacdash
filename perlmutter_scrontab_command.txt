@@ -1,3 +1,5 @@
+# perlmutter cdash dir: /global/common/software/e3sm/omega/cdash/
+##################
 #SCRON --job-name=OMEGA-SCRON
 #SCRON -q cron
 #SCRON -C cron
